@@ -201,29 +201,35 @@ unblending** — zero upload, zero quality loss.
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=noahfranklin&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0b0f19&title_color=2dd4bf&icon_color=2dd4bf&text_color=94a3b8" alt="Stats" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=noahfranklin&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=2dd4bf&text_color=94a3b8&langs_count=8" alt="Top Langs" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=noahfranklin&theme=tokyonight" alt="Profile details" width="100%" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=noahfranklin&theme=tokyonight&hide_border=true&background=0b0f19&ring=2dd4bf&fire=2dd4bf&currStreakLabel=2dd4bf" alt="Streak" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=noahfranklin&theme=tokyonight" alt="Stats" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=noahfranklin&theme=tokyonight" alt="Repos per language" />
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=noahfranklin&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=noahfranklin&theme=tokyonight" alt="Most committed language" />
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=noahfranklin&theme=tokyonight&utcOffset=0" alt="Productive time" />
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=noahfranklin&theme=tokyonight&hide_border=true&background=0b0f19&ring=2dd4bf&fire=2dd4bf&currStreakLabel=2dd4bf" alt="Streak" />
 
 </div>
 
 ---
 
-## `contribution_graph`
+## `contribution_snake`
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=noahfranklin&theme=tokyo-night&bg_color=0b0f19&color=2dd4bf&line=0f766e&point=e2e8f0&hide_border=true&area=true" alt="Activity Graph" width="100%" />
-
-<!-- Snake animation: rendered by the snake.yml workflow into the output branch -->
-<img src="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<!-- Rendered by .github/workflows/snake.yml into the `output` branch -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
+</picture>
 
 </div>
 
