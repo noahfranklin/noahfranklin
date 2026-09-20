@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
-  <img src="assets/banner-light.svg" alt="Noah Franklin — Security Engineer · Offensive Security · AI/LLM Infrastructure" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" />
+  <img src="assets/hero-light.svg" alt="Noah Franklin — Security Engineer · Offensive Security · AI/LLM Infrastructure" width="100%" />
 </picture>
 
 <p align="center">
@@ -14,7 +14,7 @@
   <a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=Followers" alt="GitHub followers" /></a>
 </p>
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## About
 
@@ -44,7 +44,7 @@ Provider-agnostic LLM proxies, offline admin tooling, and security research on A
 </tr>
 </table>
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## Featured work
 
@@ -91,7 +91,7 @@ A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mat
 </tr>
 </table>
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## Recently pushed
 
@@ -169,7 +169,7 @@ _No description yet._
 <sub>Last synced 2026-09-20</sub>
 <!--RECENT_REPOS:END-->
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## Stack
 
@@ -206,22 +206,16 @@ _No description yet._
 </tr>
 </table>
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## Activity
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=noahfranklin&theme=tokyonight" alt="Profile overview" width="100%" />
-</p>
+<sub>Rendered by my own generator from the GitHub API every six hours.</sub>
 
-<p align="center">
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=noahfranklin&theme=tokyonight" alt="Stats" />
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=noahfranklin&theme=tokyonight" alt="Repositories per language" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=noahfranklin&theme=tokyonight&hide_border=true&background=0b0f19&ring=2dd4bf&fire=2dd4bf&currStreakLabel=2dd4bf" alt="Contribution streak" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/generated/metrics-dark.svg" />
+  <img src="assets/generated/metrics-light.svg" alt="Contribution heatmap, streak, stars, and language mix" width="100%" />
+</picture>
 
 <p align="center">
   <!-- Rendered by .github/workflows/snake.yml into the `output` branch -->
@@ -231,7 +225,7 @@ _No description yet._
   </picture>
 </p>
 
-<br/>
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
 ## Contact
 

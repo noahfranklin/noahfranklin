@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="Noah Franklin — Security Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0f19"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2dd4bf" stop-opacity="0.55"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1f2937" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="0.82" cy="0.45" r="0.5"><stop offset="0" stop-color="#2dd4bf" stop-opacity="0.18"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="360" rx="14" fill="url(#bg)" stroke="#1f2937"/>
+  <rect width="1200" height="360" rx="14" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="14" fill="url(#glow)"/>
+
+  <rect x="60" y="48" width="6" height="64" rx="3" fill="url(#accent)"/>
+  <text x="84" y="84" font-family="Inter,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#f1f5f9" letter-spacing="-1">Noah Franklin</text>
+  <text x="86" y="112" font-family="Inter,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="500" fill="#94a3b8">Security Engineer · Offensive Security · AI/LLM Infrastructure</text>
+
+  <g>
+    <circle cx="1010" cy="70" r="4" fill="#34d399"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="1022" y="74" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="12" fill="#94a3b8">open to work</text>
+  </g>
+
+<rect x="60" y="138" width="720" height="196" rx="12" fill="#0a0e17" stroke="#1f2937"/>
+<rect x="60" y="138" width="720" height="30" rx="12" fill="#0f172a"/>
+<rect x="60" y="156" width="720" height="12" fill="#0f172a"/>
+<circle cx="80" cy="153" r="5" fill="#ef4444"/>
+<circle cx="98" cy="153" r="5" fill="#f59e0b"/>
+<circle cx="116" cy="153" r="5" fill="#22c55e"/>
+<text x="420.0" y="157" text-anchor="middle" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#64748b">noah@sec — zsh</text>
+<clipPath id="clip0"><rect x="80" y="182" width="0" height="20"><animate attributeName="width" from="0" to="69" begin="0.4s" dur="0.8s" fill="freeze" calcMode="linear"/></rect></clipPath>
+<text x="80" y="196" clip-path="url(#clip0)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#2dd4bf" xml:space="preserve">$ whoami</text>
+<clipPath id="clip1"><rect x="80" y="208" width="0" height="20"><animate attributeName="width" from="0" to="603" begin="1.4s" dur="1.6s" fill="freeze" calcMode="linear"/></rect></clipPath>
+<text x="80" y="222" clip-path="url(#clip1)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#cbd5e1" xml:space="preserve">noah-franklin  ·  security engineer  ·  red team  ·  ai/llm infrastructure</text>
+<clipPath id="clip2"><rect x="80" y="234" width="0" height="20"><animate attributeName="width" from="0" to="360" begin="3.4s" dur="1.6s" fill="freeze" calcMode="linear"/></rect></clipPath>
+<text x="80" y="248" clip-path="url(#clip2)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#2dd4bf" xml:space="preserve">$ ./threat-model --scope production --verify</text>
+<clipPath id="clip3"><rect x="80" y="260" width="0" height="20"><animate attributeName="width" from="0" to="652" begin="5.3s" dur="1.8s" fill="freeze" calcMode="linear"/></rect></clipPath>
+<text x="80" y="274" clip-path="url(#clip3)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#34d399" xml:space="preserve">[ok] attack surface mapped      [ok] exploits reproduced      [ok] fixes shipped</text>
+<clipPath id="clip4"><rect x="80" y="286" width="0" height="20"><animate attributeName="width" from="0" to="20" begin="7.4s" dur="0.2s" fill="freeze" calcMode="linear"/></rect></clipPath>
+<text x="80" y="300" clip-path="url(#clip4)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#2dd4bf" xml:space="preserve">$ </text>
+<rect x="98" y="288" width="8" height="15" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1" begin="7.6s" dur="10s" repeatCount="indefinite"/></rect>
+<circle cx="1010" cy="236" r="92" fill="none" stroke="#2dd4bf" stroke-opacity="0.25" stroke-width="1"/><circle cx="1010" cy="236" r="60.720000000000006" fill="none" stroke="#2dd4bf" stroke-opacity="0.25" stroke-width="1"/><circle cx="1010" cy="236" r="30.360000000000003" fill="none" stroke="#2dd4bf" stroke-opacity="0.25" stroke-width="1"/><line x1="918" y1="236" x2="1102" y2="236" stroke="#2dd4bf" stroke-opacity="0.2"/><line x1="1010" y1="144" x2="1010" y2="328" stroke="#2dd4bf" stroke-opacity="0.2"/><path d="M1010 236 L1010 144 A92 92 0 0 1 1075.1 170.9 Z" fill="url(#sweep)"><animateTransform attributeName="transform" type="rotate" from="0 1010 236" to="360 1010 236" dur="4s" repeatCount="indefinite"/></path><circle cx="1050" cy="206" r="3.5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1;1" begin="0.6s" dur="4s" repeatCount="indefinite"/></circle><circle cx="1050" cy="206" r="3.5" fill="none" stroke="#2dd4bf" opacity="0"><animate attributeName="r" values="3;16" begin="0.6s" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" begin="0.6s" dur="4s" repeatCount="indefinite"/></circle><circle cx="955" cy="256" r="3.5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1;1" begin="2.1s" dur="4s" repeatCount="indefinite"/></circle><circle cx="955" cy="256" r="3.5" fill="none" stroke="#2dd4bf" opacity="0"><animate attributeName="r" values="3;16" begin="2.1s" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" begin="2.1s" dur="4s" repeatCount="indefinite"/></circle><circle cx="1025" cy="296" r="3.5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1;1" begin="3.2s" dur="4s" repeatCount="indefinite"/></circle><circle cx="1025" cy="296" r="3.5" fill="none" stroke="#2dd4bf" opacity="0"><animate attributeName="r" values="3;16" begin="3.2s" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0" begin="3.2s" dur="4s" repeatCount="indefinite"/></circle><text x="1010" y="354" text-anchor="middle" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#64748b" letter-spacing="2">MONITORING</text>
+</svg>
