@@ -102,14 +102,26 @@ A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mat
 <tr>
 <td width="50%" valign="top">
 
+### [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
+
+This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
+<sub>3 stars · updated 3 hours ago</sub>
+
+</td>
+<td width="50%" valign="top">
+
 ### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
 
 Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>0 stars · updated 5 days ago</sub>
+<sub>0 stars · updated 6 days ago</sub>
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
@@ -120,8 +132,6 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 <sub>0 stars · updated 7 days ago</sub>
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [fable-orchestrator](https://github.com/noahfranklin/fable-orchestrator)
@@ -132,6 +142,8 @@ Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 <sub>1 star · updated 17 days ago</sub>
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [thm](https://github.com/noahfranklin/thm)
@@ -142,8 +154,6 @@ _No description yet._
 <sub>0 stars · updated 6 months ago</sub>
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
@@ -151,15 +161,6 @@ _No description yet._
 Learning Web Application Pentesting
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  
-<sub>0 stars · updated 7 months ago</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### [Reverse-Engineering-Training](https://github.com/noahfranklin/Reverse-Engineering-Training)
-
-_No description yet._
-
 <sub>0 stars · updated 7 months ago</sub>
 
 </td>
