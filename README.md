@@ -44,6 +44,73 @@ means shipping **AI/LLM infrastructure** with security baked in from line one.
 
 ---
 
+## `recently_pushed`
+
+> Auto-generated — always shows my newest activity. No manual edits below.
+
+<!--RECENT_REPOS:START-->
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
+Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) · ⭐ 0 · 🍴 fork · 🕒 5 days ago
+
+</td>
+<td width="50%" valign="top">
+
+### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
+Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · ⭐ 0 · 🕒 7 days ago
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [fable-orchestrator](https://github.com/noahfranklin/fable-orchestrator)
+Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
+
+⭐ 1 · 🍴 fork · 🕒 17 days ago
+
+</td>
+<td width="50%" valign="top">
+
+### [thm](https://github.com/noahfranklin/thm)
+_No description yet._
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · ⭐ 0 · 🕒 6 months ago
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
+Learning Web Application Pentesting
+
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) · ⭐ 0 · 🕒 7 months ago
+
+</td>
+<td width="50%" valign="top">
+
+### [Reverse-Engineering-Training](https://github.com/noahfranklin/Reverse-Engineering-Training)
+_No description yet._
+
+⭐ 0 · 🕒 7 months ago
+
+</td>
+</tr>
+</table>
+
+<sub>⚡ Auto-updated on every push and every 6 hours · last synced 2026-09-20</sub>
+<!--RECENT_REPOS:END-->
+
+---
+
 ## `featured_projects`
 
 <table>
