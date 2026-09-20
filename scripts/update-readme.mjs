@@ -39,8 +39,10 @@ function ago(iso) {
 }
 
 const esc = (t) => String(t).replace(/\|/g, "\\|").replace(/\n/g, " ").trim();
-const badge = (l, msg, color, opts = "") =>
-  `![${l}](https://img.shields.io/badge/${encodeURIComponent(l)}-${encodeURIComponent(msg)}-${color}?style=flat-square${opts})`;
+const badge = (l, msg, color, opts = "") => {
+  const path = msg ? `${encodeURIComponent(l)}-${encodeURIComponent(msg)}-${color}` : `${encodeURIComponent(l)}-${color}`;
+  return `![${l}](https://img.shields.io/badge/${path}?style=flat-square${opts})`;
+};
 
 function card(repo) {
   const name = repo.name;
@@ -48,11 +50,10 @@ function card(repo) {
   const desc = repo.description ? esc(repo.description) : "_No description yet._";
   const lang = repo.language;
   const parts = [];
-  if (lang) parts.push(badge(lang, "", LANG_COLORS[lang] || "64748B", `&logo=${lang.toLowerCase().replace(/[^a-z0-9]/g, "")}&logoColor=white`).replace("--", "-"));
-  parts.push(`⭐ ${repo.stargazers_count}`);
-  if (repo.fork) parts.push("🍴 fork");
-  parts.push(`🕒 ${ago(repo.pushed_at)}`);
-  return `### [${name}](${url})\n${desc}\n\n${parts.join(" · ")}`;
+  if (lang) parts.push(badge(lang, "", LANG_COLORS[lang] || "64748B", `&logo=${lang.toLowerCase().replace(/[^a-z0-9]/g, "")}&logoColor=white`));
+  if (repo.fork) parts.push(badge("Fork", "", "64748B"));
+  const meta = [`${repo.stargazers_count} star${repo.stargazers_count === 1 ? "" : "s"}`, `updated ${ago(repo.pushed_at)}`];
+  return `### [${name}](${url})\n\n${desc}\n\n${parts.join(" ")}${parts.length ? "  \n" : ""}<sub>${meta.join(" · ")}</sub>`;
 }
 
 async function main() {
@@ -76,7 +77,7 @@ async function main() {
   const stamp = new Date().toISOString().slice(0, 10);
   const block =
     `${START}\n<table>\n${rows.join("\n")}\n</table>\n\n` +
-    `<sub>⚡ Auto-updated on every push and every 6 hours · last synced ${stamp}</sub>\n${END}`;
+    `<sub>Last synced ${stamp}</sub>\n${END}`;
 
   const md = await readFile(README, "utf8");
   const re = new RegExp(`${START}[\\s\\S]*?${END}`);

@@ -1,52 +1,101 @@
-<!-- ============================================================= -->
-<!--                      NOAH FRANKLIN                            -->
-<!--        Security Engineer · AI Tooling · Red Team              -->
-<!-- ============================================================= -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg" />
+  <img src="assets/banner-light.svg" alt="Noah Franklin — Security Engineer · Offensive Security · AI/LLM Infrastructure" width="100%" />
+</picture>
 
-<div align="center">
+<p align="center">
+  I find the ways systems break, then build the tooling and hardened infrastructure that keep them from breaking again.<br/>
+  Currently focused on <strong>AI/LLM infrastructure</strong> with security designed in from the first commit.
+</p>
 
-<a href="https://github.com/noahfranklin">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f19,50:0f766e,100:1e3a8a&height=200&section=header&text=Noah%20Franklin&fontColor=e2e8f0&fontSize=52&fontAlignY=38&desc=Security%20Engineer%20%C2%B7%20Red%20Team%20%C2%B7%20AI%20Tooling&descSize=18&descAlignY=60&animation=fadeIn" alt="Noah Franklin" />
-</a>
+<p align="center">
+  <a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/X-@iamnoahfranklin-0f172a?style=flat-square&logo=x&logoColor=white" alt="X" /></a>&nbsp;
+  <a href="https://www.linkedin.com/in/iamnoahfranklin"><img src="https://img.shields.io/badge/LinkedIn-in/iamnoahfranklin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=Followers" alt="GitHub followers" /></a>
+</p>
 
 <br/>
 
-<a href="https://github.com/noahfranklin">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=2DD4BF&center=true&vCenter=true&width=680&lines=Breaking+things+so+they+can+be+built+securely.;Offensive+security+%E2%86%92+defensive+engineering.;Shipping+AI+tooling+that+actually+runs.;OWASP+%C2%B7+Exploit+dev+%C2%B7+LLM+infrastructure." alt="Typing SVG" />
-</a>
+## About
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**Offensive security**
+
+Web application pentesting, exploit development, and red-team assessments grounded in the OWASP Top 10 and CWE Top 25.
+
+</td>
+<td width="33%" valign="top">
+
+**Secure engineering**
+
+Full-stack systems in TypeScript, Python, Go, and Rust. Threat-modelled before the first line, tested and observable from day one.
+
+</td>
+<td width="33%" valign="top">
+
+**AI/LLM infrastructure**
+
+Provider-agnostic LLM proxies, offline admin tooling, and security research on AI-powered applications.
+
+</td>
+</tr>
+</table>
 
 <br/>
 
-<a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/Follow-%40iamnoahfranklin-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-<a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=for-the-badge&label=Follow&labelColor=0b0f19&color=0f766e&logo=github" alt="Follow" /></a>
-<img src="https://komarev.com/ghpvc/?username=noahfranklin&style=for-the-badge&label=Profile+Views&color=1e3a8a" alt="Profile views" />
+## Featured work
 
-</div>
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
 
-## `whoami`
+A hardened proxy that routes Claude Code and Codex traffic to any provider, free, paid, or local. Adds a fully offline admin dashboard, a stream idle-timeout watchdog, clean authentication errors, and a health-checked model picker.
 
-```typescript
-const noah: SecurityEngineer = {
-  role:      ["Offensive Security", "Secure Full-Stack Dev", "AI/LLM Tooling"],
-  focus:     "Turning exploit research into hardened, shipped software",
-  stack:     ["TypeScript", "Python", "Go", "Rust"],
-  security:  ["Web App Pentesting", "Exploit Dev", "OWASP Top 10", "Red Team"],
-  currently: "Building offline-first LLM proxies & AI security tooling",
-  mindset:   "Threat-model first, ship second, verify by running.",
-};
-```
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="Pytest" /> <img src="https://img.shields.io/badge/License-MIT-64748b?style=flat-square" alt="MIT" />
 
-I work at the seam between **offense and engineering** — hunting vulnerabilities the way an attacker
-would, then building the tooling and hardened systems that make them un-exploitable. Lately that
-means shipping **AI/LLM infrastructure** with security baked in from line one.
+</td>
+<td width="50%" valign="top">
 
----
+### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
 
-## `recently_pushed`
+An interactive lab for learning web application pentesting. Work through the OWASP Top 10 hands-on, one vulnerability class at a time, in a safe, self-contained environment.
 
-> Auto-generated — always shows my newest activity. No manual edits below.
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/AppSec-0f766e?style=flat-square" alt="AppSec" />
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
+
+A guided walkthrough for standing up and pentesting AI-powered applications locally, from environment setup through attack-surface analysis.
+
+<img src="https://img.shields.io/badge/AI%20Security-7c3aed?style=flat-square" alt="AI Security" /> <img src="https://img.shields.io/badge/Red%20Team-b91c1c?style=flat-square" alt="Red Team" />
+
+</td>
+<td width="50%" valign="top">
+
+### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
+
+A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mathematical alpha unblending. Nothing is uploaded and there is no quality loss.
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/Client--side-15803d?style=flat-square" alt="Client-side" />
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## Recently pushed
+
+<sub>Generated automatically from my public activity. Refreshes on every push and every six hours.</sub>
 
 <!--RECENT_REPOS:START-->
 <table>
@@ -54,17 +103,21 @@ means shipping **AI/LLM infrastructure** with security baked in from line one.
 <td width="50%" valign="top">
 
 ### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
+
 Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) · ⭐ 0 · 🍴 fork · 🕒 5 days ago
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
+<sub>0 stars · updated 5 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
+
 Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · ⭐ 0 · 🕒 7 days ago
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
+<sub>0 stars · updated 7 days ago</sub>
 
 </td>
 </tr>
@@ -72,17 +125,21 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 <td width="50%" valign="top">
 
 ### [fable-orchestrator](https://github.com/noahfranklin/fable-orchestrator)
+
 Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 
-⭐ 1 · 🍴 fork · 🕒 17 days ago
+![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
+<sub>1 star · updated 17 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### [thm](https://github.com/noahfranklin/thm)
+
 _No description yet._
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) · ⭐ 0 · 🕒 6 months ago
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
+<sub>0 stars · updated 6 months ago</sub>
 
 </td>
 </tr>
@@ -90,163 +147,96 @@ _No description yet._
 <td width="50%" valign="top">
 
 ### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
+
 Learning Web Application Pentesting
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) · ⭐ 0 · 🕒 7 months ago
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  
+<sub>0 stars · updated 7 months ago</sub>
 
 </td>
 <td width="50%" valign="top">
 
 ### [Reverse-Engineering-Training](https://github.com/noahfranklin/Reverse-Engineering-Training)
+
 _No description yet._
 
-⭐ 0 · 🕒 7 months ago
+<sub>0 stars · updated 7 months ago</sub>
 
 </td>
 </tr>
 </table>
 
-<sub>⚡ Auto-updated on every push and every 6 hours · last synced 2026-09-20</sub>
+<sub>Last synced 2026-09-20</sub>
 <!--RECENT_REPOS:END-->
 
----
+<br/>
 
-## `featured_projects`
+## Stack
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### 🤖 [free-claude-code](https://github.com/noahfranklin/free-claude-code)
-A hardened proxy that routes Claude Code & Codex traffic to **any** provider — free, paid, or local.
-Adds a fully offline admin dashboard, a stream idle-timeout watchdog, clean auth errors, and a
-health-checked model picker.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![MIT](https://img.shields.io/badge/MIT-yellow?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-
-### 🕰️ [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
-An interactive lab for **learning web application pentesting** — walk the OWASP Top 10 hands-on,
-one vulnerability class at a time, in a safe, self-contained environment.
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Security](https://img.shields.io/badge/AppSec-0f766e?style=flat-square&logo=hackthebox&logoColor=white)
-
+<td valign="middle"><strong>Languages</strong></td>
+<td>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### 🧪 [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
-A guided walkthrough for standing up and pentesting **AI-powered applications** locally — from
-environment setup to attack surface analysis.
-
-![AI](https://img.shields.io/badge/AI%20Security-8B5CF6?style=flat-square&logo=openai&logoColor=white)
-![Red Team](https://img.shields.io/badge/Red%20Team-DC2626?style=flat-square&logo=kalilinux&logoColor=white)
-
+<td valign="middle"><strong>Security</strong></td>
+<td>
+<img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+<img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white" alt="Kali Linux" />
+<img src="https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white" alt="Metasploit" />
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark" />
+<img src="https://img.shields.io/badge/OWASP-000000?style=flat-square&logo=owasp&logoColor=white" alt="OWASP" />
 </td>
-<td width="50%" valign="top">
-
-### 🎬 [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
-100% client-side tool that removes Gemini & Veo 3 AI watermarks via **mathematical alpha
-unblending** — zero upload, zero quality loss.
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Client Side](https://img.shields.io/badge/100%25%20Client--Side-16A34A?style=flat-square&logo=html5&logoColor=white)
-
+</tr>
+<tr>
+<td valign="middle"><strong>Platform</strong></td>
+<td>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
 </td>
 </tr>
 </table>
 
----
+<br/>
 
-## `tech_stack`
+## Activity
 
-<div align="center">
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=noahfranklin&theme=tokyonight" alt="Profile overview" width="100%" />
+</p>
 
-**Languages**
+<p align="center">
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=noahfranklin&theme=tokyonight" alt="Stats" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=noahfranklin&theme=tokyonight" alt="Repositories per language" />
+</p>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=noahfranklin&theme=tokyonight&hide_border=true&background=0b0f19&ring=2dd4bf&fire=2dd4bf&currStreakLabel=2dd4bf" alt="Contribution streak" />
+</p>
 
-**Security & Offensive Tooling**
-
-![Kali](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
-![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white)
-
-**Build & Deploy**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-</div>
-
----
-
-## `github_stats`
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=noahfranklin&theme=tokyonight" alt="Profile details" width="100%" />
+<p align="center">
+  <!-- Rendered by .github/workflows/snake.yml into the `output` branch -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake-dark.svg" />
+    <img src="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake.svg" alt="Contribution graph" width="100%" />
+  </picture>
+</p>
 
 <br/>
 
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=noahfranklin&theme=tokyonight" alt="Stats" />
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=noahfranklin&theme=tokyonight" alt="Repos per language" />
+## Contact
 
-<br/>
+Open to security engineering, red-team, and AI infrastructure work. The fastest way to reach me is a message on <a href="https://x.com/iamnoahfranklin">X</a> or <a href="https://www.linkedin.com/in/iamnoahfranklin">LinkedIn</a>.
 
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=noahfranklin&theme=tokyonight" alt="Most committed language" />
-<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=noahfranklin&theme=tokyonight&utcOffset=0" alt="Productive time" />
-
-<br/>
-
-<img src="https://streak-stats.demolab.com/?user=noahfranklin&theme=tokyonight&hide_border=true&background=0b0f19&ring=2dd4bf&fire=2dd4bf&currStreakLabel=2dd4bf" alt="Streak" />
-
-</div>
-
----
-
-## `contribution_snake`
-
-<div align="center">
-
-<!-- Rendered by .github/workflows/snake.yml into the `output` branch -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake-dark.svg" />
-  <img src="https://raw.githubusercontent.com/noahfranklin/noahfranklin/output/github-contribution-grid-snake.svg" alt="Contribution snake" />
-</picture>
-
-</div>
-
----
-
-<div align="center">
-
-### `let's_connect`
-
-<a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-<a href="https://www.linkedin.com/in/iamnoahfranklin"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://github.com/noahfranklin"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-
-<br/><br/>
-
-<i>"The best way to defend a system is to know exactly how you'd break it."</i>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a8a,50:0f766e,100:0b0f19&height=120&section=footer" alt="footer" />
-
-</div>
+<p align="center">
+  <sub>The best way to defend a system is to know exactly how you would break it.</sub>
+</p>
