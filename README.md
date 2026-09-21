@@ -107,7 +107,7 @@ A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mat
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>8 stars · updated 15 hours ago</sub>
+<sub>11 stars · updated 1 day ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -117,7 +117,7 @@ This guide will walk you through the process of setting up your local developmen
 Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>0 stars · updated 6 days ago</sub>
+<sub>0 stars · updated 7 days ago</sub>
 
 </td>
 </tr>
