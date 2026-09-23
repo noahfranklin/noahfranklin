@@ -107,7 +107,7 @@ A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mat
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>14 stars · updated 2 days ago</sub>
+<sub>15 stars · updated 2 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -129,7 +129,7 @@ Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from
 Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 9 days ago</sub>
+<sub>0 stars · updated 10 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -139,7 +139,7 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 
 ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>1 star · updated 19 days ago</sub>
+<sub>1 star · updated 20 days ago</sub>
 
 </td>
 </tr>
@@ -167,7 +167,7 @@ Learning Web Application Pentesting
 </tr>
 </table>
 
-<sub>Last synced 2026-09-22</sub>
+<sub>Last synced 2026-09-23</sub>
 <!--RECENT_REPOS:END-->
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
