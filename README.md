@@ -107,7 +107,7 @@ A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mat
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>17 stars · updated 5 days ago</sub>
+<sub>17 stars · updated 6 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
