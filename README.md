@@ -106,14 +106,26 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <tr>
 <td width="50%" valign="top">
 
+### [gideon](https://github.com/noahfranklin/gideon)
+
+Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
+<sub>0 stars · updated 6 minutes ago</sub>
+
+</td>
+<td width="50%" valign="top">
+
 ### [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
 
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>17 stars · updated 6 days ago</sub>
+<sub>18 stars · updated 16 minutes ago</sub>
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
@@ -124,8 +136,6 @@ Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from
 <sub>0 stars · updated 12 days ago</sub>
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
@@ -136,6 +146,8 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 <sub>0 stars · updated 13 days ago</sub>
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 ### [fable-orchestrator](https://github.com/noahfranklin/fable-orchestrator)
@@ -146,8 +158,6 @@ Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 <sub>1 star · updated 23 days ago</sub>
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [thm](https://github.com/noahfranklin/thm)
@@ -156,16 +166,6 @@ _No description yet._
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
 <sub>0 stars · updated 6 months ago</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
-
-Learning Web Application Pentesting
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)  
-<sub>0 stars · updated 7 months ago</sub>
 
 </td>
 </tr>
