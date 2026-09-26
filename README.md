@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/X-@iamnoahfranklin-0f172a?style=flat-square&logo=x&logoColor=white" alt="X" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/iamnoahfranklin"><img src="https://img.shields.io/badge/LinkedIn-in/iamnoahfranklin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
+  <a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=Followers" alt="GitHub followers" /></a>&nbsp;
   <a href="https://github.com/noahfranklin/gideon"><img src="https://img.shields.io/github/stars/noahfranklin/gideon?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=%E2%98%85%20Gideon" alt="Star Gideon" /></a>
 </p>
 
