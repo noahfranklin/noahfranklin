@@ -11,7 +11,11 @@
 <p align="center">
   <a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/X-@iamnoahfranklin-0f172a?style=flat-square&logo=x&logoColor=white" alt="X" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/iamnoahfranklin"><img src="https://img.shields.io/badge/LinkedIn-in/iamnoahfranklin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=Followers" alt="GitHub followers" /></a>
+  <a href="https://github.com/noahfranklin/gideon"><img src="https://img.shields.io/github/stars/noahfranklin/gideon?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=%E2%98%85%20Gideon" alt="Star Gideon" /></a>
+</p>
+
+<p align="center">
+  <sub><strong>NEW &middot;</strong> <a href="https://github.com/noahfranklin/gideon">Gideon</a> — a 21-skill offensive &amp; defensive security suite for Claude Code &amp; Codex. &nbsp;⭐ Star it &middot; <a href="https://github.com/noahfranklin?tab=followers">Follow</a> for offensive-security tooling &amp; AI-security research.</sub>
 </p>
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
@@ -52,40 +56,40 @@ Provider-agnostic LLM proxies, offline admin tooling, and security research on A
 <tr>
 <td width="50%" valign="top">
 
-### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
+### [🛡️ Gideon](https://github.com/noahfranklin/gideon)
 
-A hardened proxy that routes Claude Code and Codex traffic to any provider, free, paid, or local. Adds a fully offline admin dashboard, a stream idle-timeout watchdog, clean authentication errors, and a health-checked model picker.
+A complete offensive **and** defensive security suite for Claude Code & Codex — **21 authorization-first Agent Skills** across web, API, mobile, AI/LLM, network, cloud, Active Directory & Entra ID, plus exploit-chaining, correlation, and report writing. Standards-mapped end to end.
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" alt="Pytest" /> <img src="https://img.shields.io/badge/License-MIT-64748b?style=flat-square" alt="MIT" />
-
-</td>
-<td width="50%" valign="top">
-
-### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
-
-An interactive lab for learning web application pentesting. Work through the OWASP Top 10 hands-on, one vulnerability class at a time, in a safe, self-contained environment.
-
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" /> <img src="https://img.shields.io/badge/AppSec-0f766e?style=flat-square" alt="AppSec" />
+<img src="https://img.shields.io/badge/skills-21-0f766e?style=flat-square" alt="21 skills" /> <img src="https://img.shields.io/badge/OWASP%20%7C%20ATT%26CK%20%7C%20ATLAS-b91c1c?style=flat-square" alt="Standards" /> <img src="https://img.shields.io/github/stars/noahfranklin/gideon?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 ### [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
 
 A guided walkthrough for standing up and pentesting AI-powered applications locally, from environment setup through attack-surface analysis.
 
-<img src="https://img.shields.io/badge/AI%20Security-7c3aed?style=flat-square" alt="AI Security" /> <img src="https://img.shields.io/badge/Red%20Team-b91c1c?style=flat-square" alt="Red Team" />
+<img src="https://img.shields.io/badge/AI%20Security-7c3aed?style=flat-square" alt="AI Security" /> <img src="https://img.shields.io/badge/Red%20Team-b91c1c?style=flat-square" alt="Red Team" /> <img src="https://img.shields.io/github/stars/noahfranklin/OWASP-AI-Pentest?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [OWASP-TimeMachine](https://github.com/noahfranklin/OWASP-TimeMachine)
+
+An interactive lab for learning web application pentesting. Work through the OWASP Top 10 hands-on, one vulnerability class at a time, in a safe, self-contained environment.
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/AppSec-0f766e?style=flat-square" alt="AppSec" /> <img src="https://img.shields.io/github/stars/noahfranklin/OWASP-TimeMachine?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
 
 </td>
 <td width="50%" valign="top">
 
-### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
+### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
 
-A fully client-side tool that removes Gemini and Veo 3 AI watermarks through mathematical alpha unblending. Nothing is uploaded and there is no quality loss.
+A hardened proxy that routes Claude Code and Codex traffic to any provider — free, paid, or local. Offline admin dashboard, stream idle-timeout watchdog, clean auth errors, and a health-checked model picker.
 
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" /> <img src="https://img.shields.io/badge/Client--side-15803d?style=flat-square" alt="Client-side" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/License-MIT-64748b?style=flat-square" alt="MIT" /> <img src="https://img.shields.io/github/stars/noahfranklin/free-claude-code?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
 
 </td>
 </tr>
