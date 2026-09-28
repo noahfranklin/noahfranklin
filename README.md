@@ -112,7 +112,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 5 hours ago</sub>
+<sub>0 stars · updated 11 hours ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -144,7 +144,7 @@ Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from
 Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 14 days ago</sub>
+<sub>0 stars · updated 15 days ago</sub>
 
 </td>
 </tr>
@@ -156,7 +156,7 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 
 ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>1 star · updated 24 days ago</sub>
+<sub>1 star · updated 25 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -172,7 +172,7 @@ _No description yet._
 </tr>
 </table>
 
-<sub>Last synced 2026-09-27</sub>
+<sub>Last synced 2026-09-28</sub>
 <!--RECENT_REPOS:END-->
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
