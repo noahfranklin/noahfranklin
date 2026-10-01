@@ -112,7 +112,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 3 days ago</sub>
+<sub>0 stars · updated 4 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -122,7 +122,7 @@ Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP 
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>19 stars · updated 4 days ago</sub>
+<sub>19 stars · updated 5 days ago</sub>
 
 </td>
 </tr>
@@ -156,7 +156,7 @@ Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, 
 Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
 
 ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>1 star · updated 28 days ago</sub>
+<sub>1 star · updated 29 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
