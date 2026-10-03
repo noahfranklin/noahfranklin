@@ -122,7 +122,7 @@ Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP 
 This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>19 stars · updated 6 days ago</sub>
+<sub>19 stars · updated 7 days ago</sub>
 
 </td>
 </tr>
