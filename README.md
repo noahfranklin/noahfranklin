@@ -112,7 +112,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>1 star · updated 14 days ago</sub>
+<sub>2 stars · updated 14 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
@@ -134,7 +134,7 @@ This guide will walk you through the process of setting up your local developmen
 Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>0 stars · updated 27 days ago</sub>
+<sub>0 stars · updated 28 days ago</sub>
 
 </td>
 <td width="50%" valign="top">
