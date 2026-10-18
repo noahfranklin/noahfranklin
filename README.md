@@ -36,7 +36,7 @@ Web application pentesting, exploit development, and red-team assessments ground
 
 **Secure engineering**
 
-Full-stack systems in TypeScript, Python, Go, and Rust. Threat-modelled before the first line, tested and observable from day one.
+Full-stack systems in Python, TypeScript, and JavaScript. Threat-modelled before the first line, tested and observable from day one.
 
 </td>
 <td width="33%" valign="top">
@@ -155,8 +155,6 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
-<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
 </td>
 </tr>
