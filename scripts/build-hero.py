@@ -60,7 +60,8 @@ def script():
             ("$ git log -1 --oneline", "prompt"),
             (clip(f"{c['sha']} ({c['repo']}) {c['message']}", 74) + f" · {c['date'][:10]}", "out"),
             ("$ ./profile --audit", "prompt"),
-            (f"[ok] {STATS['stars']} stars   [ok] {STATS['forks']} forks   [ok] {STATS.get('skills') or '—'} gideon skills shipped", "ok"),
+            (f"[ok] {STATS['stars']} stars   [ok] {STATS['forks']} forks   [ok] {STATS.get('skills') or '—'} gideon skills"
+             + (f"   [??] flag: {STATS['solvers']} found" if CTF else " shipped"), "ok"),
         ]
     else:
         lines += [

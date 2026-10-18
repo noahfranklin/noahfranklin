@@ -203,6 +203,20 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
+## Capture the flag
+
+There is a signal hidden in the radar at the top of this page. Not everything on a radar is visible.
+
+Decode it, recover the flag, then [open a CTF issue](https://github.com/noahfranklin/noahfranklin/issues/new?template=ctf.yml) with `sha256(flag + ":" + your_github_login)`. A bot checks it and adds you below. Never post the flag itself.
+
+**Hall of fame**
+
+<!--CTF_HOF:START-->
+_Nobody yet. Be the first._
+<!--CTF_HOF:END-->
+
+<p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
+
 ## Contact
 
 Open to security engineering, red-team, and AI infrastructure work. The fastest way to reach me is a message on <a href="https://x.com/iamnoahfranklin">X</a> or <a href="https://www.linkedin.com/in/iamnoahfranklin">LinkedIn</a>.

@@ -1,0 +1,17 @@
+name: "🚩 Capture the flag"
+description: Found the signal hidden in my profile banner? Submit your proof here.
+title: "[ctf] proof"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste the flag itself here.** Issues are public.
+        Submit `sha256(flag + ":" + your_github_login)` instead. It only works for your account, so nobody can copy it.
+  - type: input
+    id: proof
+    attributes:
+      label: Proof
+      description: 64 hex characters.
+      placeholder: e.g. 3f2a…
+    validations:
+      required: true

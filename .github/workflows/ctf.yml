@@ -1,0 +1,46 @@
+name: Verify CTF Proof
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ctf-verify
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: startsWith(github.event.issue.title, '[ctf]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The issue body is attacker-controlled: pass it via env, never inline it in a script.
+      - name: Check proof
+        env:
+          CTF_FLAG: ${{ secrets.CTF_FLAG }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LOGIN: ${{ github.event.issue.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/ctf-verify.mjs
+
+      - name: Commit hall of fame
+        run: |
+          git add README.md
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "ctf: new solver"
+            git pull --rebase
+            git push
+          fi
