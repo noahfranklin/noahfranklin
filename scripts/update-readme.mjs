@@ -2,9 +2,15 @@
 /**
  * Profile generator. Runs in CI on a schedule (see .github/workflows/update-readme.yml).
  *
- *  1. Rewrites the "Recently pushed" section of README.md with the newest repos.
+ *  1. Rewrites the "Latest commits" section of README.md from my most recently
+ *     pushed public repos.
  *  2. Renders assets/generated/metrics-{dark,light}.svg — a self-hosted metrics
- *     board (contribution heatmap, streak, stars, repos, language mix).
+ *     board (stars, forks, projects, contributions, language mix).
+ *  3. Renders assets/generated/badge-*.svg — follower, star, and Gideon skill
+ *     counts drawn here instead of fetched from shields.io, which intermittently
+ *     renders "invalid".
+ *  4. Writes assets/generated/stats.json, which scripts/build-hero.py reads to
+ *     plot real repos on the hero radar and type the latest commit.
  *
  * No dependencies — Node 20+ global fetch. GITHUB_TOKEN is required for the
  * GraphQL contribution calendar; without it the metrics board is skipped.
@@ -18,6 +24,8 @@ const README = "README.md";
 const START = "<!--RECENT_REPOS:START-->";
 const END = "<!--RECENT_REPOS:END-->";
 const COUNT = 6;
+const HOF_START = "<!--CTF_HOF:START-->";
+const HOF_END = "<!--CTF_HOF:END-->";
 const OUT_DIR = "assets/generated";
 
 const LANG_COLORS = {
@@ -62,32 +70,56 @@ function ago(iso) {
   return "just now";
 }
 
-const esc = (t) => String(t).replace(/\|/g, "\\|").replace(/\n/g, " ").trim();
 const xml = (t) => String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-const badge = (l, msg, color, opts = "") => {
-  const path = msg ? `${encodeURIComponent(l)}-${encodeURIComponent(msg)}-${color}` : `${encodeURIComponent(l)}-${color}`;
-  return `![${l}](https://img.shields.io/badge/${path}?style=flat-square${opts})`;
-};
 
-// ---------- 1. recently pushed ----------
+// ---------- 0. count badges ----------
 
-function card(repo) {
-  const desc = repo.description ? esc(repo.description) : "_No description yet._";
-  const lang = repo.language;
-  const parts = [];
-  if (lang) parts.push(badge(lang, "", LANG_COLORS[lang] || "64748B", `&logo=${lang.toLowerCase().replace(/[^a-z0-9]/g, "")}&logoColor=white`));
-  if (repo.fork) parts.push(badge("Fork", "", "64748B"));
-  const meta = [`${repo.stargazers_count} star${repo.stargazers_count === 1 ? "" : "s"}`, `updated ${ago(repo.pushed_at)}`];
-  return `### [${repo.name}](${repo.html_url})\n\n${desc}\n\n${parts.join(" ")}${parts.length ? "  \n" : ""}<sub>${meta.join(" · ")}</sub>`;
+// Approximate Verdana 11px advance widths, enough to size a badge.
+const textWidth = (t) => [...t].reduce((w, ch) => w + (/[ijlI.,:;|!' ]/.test(ch) ? 3.6 : /[mwMW]/.test(ch) ? 9.5 : /[A-Z0-9★]/.test(ch) ? 7.4 : 6.2), 0);
+
+function countBadge(label, value, color = "0f766e") {
+  const lw = Math.round(textWidth(label) + 14), vw = Math.round(textWidth(value) + 14), W = lw + vw;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="20" role="img" aria-label="${xml(label)}: ${xml(value)}">
+  <rect width="${lw}" height="20" fill="#0f172a"/><rect x="${lw}" width="${vw}" height="20" fill="#${color}"/>
+  <g fill="#fff" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11" text-anchor="middle">
+    <text x="${lw / 2}" y="14">${xml(label)}</text><text x="${lw + vw / 2}" y="14" font-weight="700">${xml(value)}</text>
+  </g>
+</svg>
+`;
 }
 
-function recentBlock(repos, stamp) {
-  const rows = [];
-  for (let i = 0; i < repos.length; i += 2) {
-    const left = card(repos[i]);
-    const right = repos[i + 1] ? card(repos[i + 1]) : "";
-    rows.push(`<tr>\n<td width="50%" valign="top">\n\n${left}\n\n</td>\n<td width="50%" valign="top">\n\n${right}\n\n</td>\n</tr>`);
+async function writeBadges(own, followers, md) {
+  await mkdir(OUT_DIR, { recursive: true });
+  await writeFile(`${OUT_DIR}/badge-followers.svg`, countBadge("Followers", fmt(followers)));
+  // Only repos the README actually shows a star badge for.
+  for (const r of own.filter((r) => md.includes(`badge-stars-${r.name}.svg`))) {
+    await writeFile(`${OUT_DIR}/badge-stars-${r.name}.svg`, countBadge("★ stars", fmt(r.stargazers_count), "475569"));
   }
+  const tree = await rest(`/repos/${USER}/gideon/git/trees/HEAD?recursive=1`).catch(() => null);
+  const skills = tree?.tree.filter((f) => f.path.endsWith("/SKILL.md")).length;
+  if (skills) await writeFile(`${OUT_DIR}/badge-gideon-skills.svg`, countBadge("skills", String(skills)));
+  return skills || null;
+}
+
+// ---------- 1. latest commits ----------
+
+async function recentCommits(repos) {
+  const lists = await Promise.all(
+    repos.slice(0, 4).map(async (r) =>
+      (await rest(`/repos/${USER}/${r.name}/commits?per_page=${COUNT}`).catch(() => []))
+        .filter((c) => c.parents.length < 2)
+        .map((c) => ({ repo: r.name, sha: c.sha.slice(0, 7), url: c.html_url, message: c.commit.message.split("\n")[0], date: c.commit.committer.date }))
+    )
+  );
+  return lists.flat().sort((a, b) => b.date.localeCompare(a.date)).slice(0, COUNT);
+}
+
+const clip = (t, n) => (t.length > n ? `${t.slice(0, n - 1)}…` : t);
+
+function commitsBlock(commits, stamp) {
+  const rows = commits.map((c) =>
+    `<tr>\n<td><a href="${c.url}"><code>${c.sha}</code></a></td>\n<td><a href="https://github.com/${USER}/${c.repo}"><strong>${xml(c.repo)}</strong></a></td>\n<td>${xml(clip(c.message, 72))}</td>\n<td><sub>${ago(c.date)}</sub></td>\n</tr>`
+  );
   return `${START}\n<table>\n${rows.join("\n")}\n</table>\n\n<sub>Last synced ${stamp}</sub>\n${END}`;
 }
 
@@ -95,11 +127,9 @@ function recentBlock(repos, stamp) {
 
 const THEMES = {
   dark: { bg0: "#0b0f19", bg1: "#111827", border: "#1f2937", text: "#f1f5f9", muted: "#94a3b8", dim: "#64748b",
-          accent: "#2dd4bf", accent2: "#3b82f6", tile: "#0f172a", cell0: "#1f2937",
-          cells: ["#134e4a", "#0f766e", "#14b8a6", "#5eead4"] },
+          accent: "#2dd4bf", accent2: "#3b82f6", tile: "#0f172a" },
   light: { bg0: "#ffffff", bg1: "#f8fafc", border: "#e2e8f0", text: "#0f172a", muted: "#475569", dim: "#94a3b8",
-           accent: "#0f766e", accent2: "#1d4ed8", tile: "#f1f5f9", cell0: "#e5e7eb",
-           cells: ["#99f6e4", "#5eead4", "#14b8a6", "#0f766e"] },
+           accent: "#0f766e", accent2: "#1d4ed8", tile: "#f1f5f9" },
 };
 const SANS = "Inter,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif";
 const MONO = "'JetBrains Mono','SF Mono',Menlo,Consolas,monospace";
@@ -123,12 +153,12 @@ function fmt(n) {
 }
 
 function metricsSvg(t, m) {
-  const W = 1200, H = 380;
+  const W = 1200, H = 260;
   const tiles = [
-    ["Contributions", fmt(m.contributions), "last 12 months"],
-    ["Current streak", `${m.streak.current}d`, `longest ${m.streak.longest}d`],
-    ["Stars earned", fmt(m.stars), `across ${m.repos} public repos`],
-    ["Followers", fmt(m.followers), "on GitHub"],
+    ["Stars earned", fmt(m.stars), `top: ${m.topRepo}`],
+    ["Forked by others", fmt(m.forks), "people building on my work"],
+    ["Public projects", fmt(m.repos), `${m.languages.length} languages in use`],
+    ["Contributions", fmt(m.contributions), `last 12 months · best run ${m.streak.longest}d`],
   ];
   const tileW = 262, gap = 24, x0 = 48, y0 = 56;
   const tilesSvg = tiles.map(([label, value, sub], i) => {
@@ -157,35 +187,6 @@ function metricsSvg(t, m) {
     cursor += w;
   });
 
-  // heatmap
-  const cell = 12, cgap = 3, hx = 48, hy = 250;
-  const cells = [];
-  const max = Math.max(1, ...m.weeks.flatMap((w) => w.map((d) => d.count)));
-  m.weeks.forEach((week, wi) => {
-    week.forEach((d, di) => {
-      let fill = t.cell0;
-      if (d.count > 0) {
-        const lvl = Math.min(3, Math.floor((d.count / max) * 4));
-        fill = t.cells[lvl];
-      }
-      cells.push(`<rect x="${hx + wi * (cell + cgap)}" y="${hy + di * (cell + cgap)}" width="${cell}" height="${cell}" rx="2.5" fill="${fill}"><title>${d.date}: ${d.count}</title></rect>`);
-    });
-  });
-  const heatW = m.weeks.length * (cell + cgap);
-  const monthLabels = [];
-  let lastMonth = "";
-  m.weeks.forEach((week, wi) => {
-    const mo = new Date(week[0].date).toLocaleString("en", { month: "short", timeZone: "UTC" });
-    if (mo !== lastMonth) {
-      monthLabels.push(`<text x="${hx + wi * (cell + cgap)}" y="${hy - 8}" font-family="${SANS}" font-size="10" fill="${t.dim}">${mo}</text>`);
-      lastMonth = mo;
-    }
-  });
-  const legendX = hx + heatW - 5 * 17 - 60;
-  const heatLegend = `<text x="${legendX - 30}" y="${hy + 7 * 15 + 14}" font-family="${SANS}" font-size="10" fill="${t.dim}">Less</text>` +
-    [t.cell0, ...t.cells].map((c, i) => `<rect x="${legendX + i * 17}" y="${hy + 7 * 15 + 4}" width="12" height="12" rx="2.5" fill="${c}"/>`).join("") +
-    `<text x="${legendX + 5 * 17 + 4}" y="${hy + 7 * 15 + 14}" font-family="${SANS}" font-size="10" fill="${t.dim}">More</text>`;
-
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="GitHub metrics for ${USER}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${t.bg0}"/><stop offset="1" stop-color="${t.bg1}"/></linearGradient>
@@ -197,9 +198,6 @@ function metricsSvg(t, m) {
 ${tilesSvg}
   ${segs.join("\n  ")}
   ${legend.join("\n  ")}
-  ${monthLabels.join("\n  ")}
-  ${cells.join("\n  ")}
-  ${heatLegend}
 </svg>
 `;
 }
@@ -244,8 +242,10 @@ async function buildMetrics(repos, stamp) {
     stamp,
     contributions: cal.totalContributions,
     streak: streaks(days),
-    stars: repos.reduce((s, r) => s + r.stargazers_count, 0),
-    repos: repos.length,
+    stars: repos.filter((r) => !r.fork).reduce((s, r) => s + r.stargazers_count, 0),
+    forks: repos.filter((r) => !r.fork).reduce((s, r) => s + r.forks_count, 0),
+    topRepo: repos.filter((r) => !r.fork).sort((a, b) => b.stargazers_count - a.stargazers_count)[0]?.name || "—",
+    repos: repos.filter((r) => !r.fork).length,
     followers: data.user.followers.totalCount,
     languages,
     weeks,
@@ -255,7 +255,8 @@ async function buildMetrics(repos, stamp) {
   for (const [name, theme] of Object.entries(THEMES)) {
     await writeFile(`${OUT_DIR}/metrics-${name}.svg`, metricsSvg(theme, m));
   }
-  console.log(`Metrics board: ${m.contributions} contributions, streak ${m.streak.current}d, ${m.stars} stars, ${languages.length} languages.`);
+  console.log(`Metrics board: ${m.contributions} contributions, ${m.stars} stars, ${m.forks} forks, ${languages.length} languages.`);
+  return m;
 }
 
 // ---------- main ----------
@@ -264,19 +265,36 @@ async function main() {
   const stamp = new Date().toISOString().slice(0, 10);
   const all = (await rest(`/users/${USER}/repos?per_page=100&sort=pushed&type=owner`))
     .filter((r) => !r.archived && r.name.toLowerCase() !== USER.toLowerCase());
+  const own = all.filter((r) => !r.fork);
 
   const md = await readFile(README, "utf8");
   const re = new RegExp(`${START}[\\s\\S]*?${END}`);
   if (!re.test(md)) throw new Error("Markers not found in README.md");
-  const next = md.replace(re, recentBlock(all.slice(0, COUNT), stamp));
+  const commits = await recentCommits(own);
+  const next = md.replace(re, commitsBlock(commits, stamp));
   if (next !== md) {
     await writeFile(README, next);
-    console.log(`README: updated ${Math.min(COUNT, all.length)} recent repos.`);
+    console.log(`README: updated ${commits.length} recent commits.`);
   } else {
     console.log("README: no changes.");
   }
 
-  await buildMetrics(all, stamp);
+  const m = await buildMetrics(all, stamp);
+  const followers = m?.followers ?? (await rest(`/users/${USER}`)).followers;
+  const skills = await writeBadges(own, followers, next);
+
+  const hof = next.match(new RegExp(`${HOF_START}([\\s\\S]*?)${HOF_END}`))?.[1].match(/github\.com\/[\w-]+\)/g) || [];
+  const stats = {
+    stamp,
+    followers,
+    stars: own.reduce((s, r) => s + r.stargazers_count, 0),
+    forks: own.reduce((s, r) => s + r.forks_count, 0),
+    skills,
+    solvers: hof.length,
+    commit: commits[0] || null,
+    repos: own.map((r) => ({ name: r.name, stars: r.stargazers_count, pushed: r.pushed_at, topics: r.topics || [], description: r.description || "" })),
+  };
+  await writeFile(`${OUT_DIR}/stats.json`, JSON.stringify(stats, null, 2) + "\n");
 }
 
 main().catch((e) => {

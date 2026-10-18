@@ -11,12 +11,12 @@
 <p align="center">
   <a href="https://x.com/iamnoahfranklin"><img src="https://img.shields.io/badge/X-@iamnoahfranklin-0f172a?style=flat-square&logo=x&logoColor=white" alt="X" /></a>&nbsp;
   <a href="https://www.linkedin.com/in/iamnoahfranklin"><img src="https://img.shields.io/badge/LinkedIn-in/iamnoahfranklin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>&nbsp;
-  <a href="https://github.com/noahfranklin?tab=followers"><img src="https://img.shields.io/github/followers/noahfranklin?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=Followers" alt="GitHub followers" /></a>&nbsp;
-  <a href="https://github.com/noahfranklin/gideon"><img src="https://img.shields.io/github/stars/noahfranklin/gideon?style=flat-square&labelColor=0f172a&color=0f766e&logo=github&label=%E2%98%85%20Gideon" alt="Star Gideon" /></a>
+  <a href="https://github.com/noahfranklin?tab=followers"><img src="assets/generated/badge-followers.svg" alt="GitHub followers" /></a>&nbsp;
+  <a href="https://github.com/noahfranklin/gideon"><img src="assets/generated/badge-stars-gideon.svg" alt="Star Gideon" /></a>
 </p>
 
 <p align="center">
-  <sub><strong>NEW &middot;</strong> <a href="https://github.com/noahfranklin/gideon">Gideon</a> — a 21-skill offensive &amp; defensive security suite for Claude Code &amp; Codex. &nbsp;⭐ Star it &middot; <a href="https://github.com/noahfranklin?tab=followers">Follow</a> for offensive-security tooling &amp; AI-security research.</sub>
+  <sub><strong>NEW &middot;</strong> <a href="https://github.com/noahfranklin/gideon">Gideon</a> — a 26-skill offensive &amp; defensive security suite for Claude Code &amp; Codex. &nbsp;⭐ Star it &middot; <a href="https://github.com/noahfranklin?tab=followers">Follow</a> for offensive-security tooling &amp; AI-security research.</sub>
 </p>
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
@@ -59,9 +59,9 @@ Provider-agnostic LLM proxies, offline admin tooling, and security research on A
 
 ### [🛡️ Gideon](https://github.com/noahfranklin/gideon)
 
-A complete offensive **and** defensive security suite for Claude Code & Codex — **21 authorization-first Agent Skills** across web, API, mobile, AI/LLM, network, cloud, Active Directory & Entra ID, plus exploit-chaining, correlation, and report writing. Standards-mapped end to end.
+A complete offensive **and** defensive security suite for Claude Code & Codex — **26 authorization-first Agent Skills** across web, API, mobile, AI/LLM (agents, tool-use & MCP), network, cloud, containers, IoT, Active Directory & Entra ID, and the CI/CD supply chain, plus exploit-chaining, detection engineering, and report writing. Standards-mapped end to end.
 
-<img src="https://img.shields.io/badge/skills-21-0f766e?style=flat-square" alt="21 skills" /> <img src="https://img.shields.io/badge/OWASP%20%7C%20ATT%26CK%20%7C%20ATLAS-b91c1c?style=flat-square" alt="Standards" /> <img src="https://img.shields.io/github/stars/noahfranklin/gideon?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
+<img src="assets/generated/badge-gideon-skills.svg" alt="Skill count" /> <img src="https://img.shields.io/badge/OWASP%20%7C%20ATT%26CK%20%7C%20ATLAS-b91c1c?style=flat-square" alt="Standards" /> <img src="assets/generated/badge-stars-gideon.svg" alt="stars" />
 
 </td>
 <td width="50%" valign="top">
@@ -70,7 +70,7 @@ A complete offensive **and** defensive security suite for Claude Code & Codex �
 
 A guided walkthrough for standing up and pentesting AI-powered applications locally, from environment setup through attack-surface analysis.
 
-<img src="https://img.shields.io/badge/AI%20Security-7c3aed?style=flat-square" alt="AI Security" /> <img src="https://img.shields.io/badge/Red%20Team-b91c1c?style=flat-square" alt="Red Team" /> <img src="https://img.shields.io/github/stars/noahfranklin/OWASP-AI-Pentest?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
+<img src="https://img.shields.io/badge/AI%20Security-7c3aed?style=flat-square" alt="AI Security" /> <img src="https://img.shields.io/badge/Red%20Team-b91c1c?style=flat-square" alt="Red Team" /> <img src="assets/generated/badge-stars-OWASP-AI-Pentest.svg" alt="stars" />
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ A guided walkthrough for standing up and pentesting AI-powered applications loca
 
 An interactive lab for learning web application pentesting. Work through the OWASP Top 10 hands-on, one vulnerability class at a time, in a safe, self-contained environment.
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/AppSec-0f766e?style=flat-square" alt="AppSec" /> <img src="https://img.shields.io/github/stars/noahfranklin/OWASP-TimeMachine?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/AppSec-0f766e?style=flat-square" alt="AppSec" /> <img src="assets/generated/badge-stars-OWASP-TimeMachine.svg" alt="stars" />
 
 </td>
 <td width="50%" valign="top">
@@ -90,7 +90,7 @@ An interactive lab for learning web application pentesting. Work through the OWA
 
 A hardened proxy that routes Claude Code and Codex traffic to any provider — free, paid, or local. Offline admin dashboard, stream idle-timeout watchdog, clean auth errors, and a health-checked model picker.
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/License-MIT-64748b?style=flat-square" alt="MIT" /> <img src="https://img.shields.io/github/stars/noahfranklin/free-claude-code?style=flat-square&labelColor=0f172a&color=64748b&logo=github&label=stars" alt="stars" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/License-MIT-64748b?style=flat-square" alt="MIT" /> <img src="assets/generated/badge-stars-free-claude-code.svg" alt="stars" />
 
 </td>
 </tr>
@@ -98,77 +98,47 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
 
-## Recently pushed
+## Latest commits
 
-<sub>Generated automatically from my public activity. Refreshes on every push and every six hours.</sub>
+<sub>Pulled from my most recently pushed public repos every six hours.</sub>
 
 <!--RECENT_REPOS:START-->
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### [gideon](https://github.com/noahfranklin/gideon)
-
-Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>2 stars · updated 21 days ago</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### [OWASP-AI-Pentest](https://github.com/noahfranklin/OWASP-AI-Pentest)
-
-This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>19 stars · updated 21 days ago</sub>
-
-</td>
+<td><a href="https://github.com/noahfranklin/gideon/commit/05b9ba96f5405fe942dee6870243815f7d5a971f"><code>05b9ba9</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>README: refresh prose + standards mapping for the 26-skill suite</td>
+<td><sub>15 minutes ago</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### [gemini-watermark-remover](https://github.com/noahfranklin/gemini-watermark-remover)
-
-Free, 100% client-side tool to remove Google Gemini and Veo 3 AI watermarks from images and videos using mathematical alpha unblending with zero quality loss.
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) ![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>0 stars · updated 1 month ago</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### [free-claude-code](https://github.com/noahfranklin/free-claude-code)
-
-Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 1 month ago</sub>
-
-</td>
+<td><a href="https://github.com/noahfranklin/gideon/commit/dfe53492a7481872ea8021b045ef9061bf04ca4d"><code>dfe5349</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>Gap review: +5 skills (21→26) and latest-method refreshes</td>
+<td><sub>19 minutes ago</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-
-### [fable-orchestrator](https://github.com/noahfranklin/fable-orchestrator)
-
-Fable 5.1 orchestrates. GPT-5.6 Luna and DeepSeek V4 Flash implement.
-
-![Fork](https://img.shields.io/badge/Fork-64748B?style=flat-square)  
-<sub>1 star · updated 1 month ago</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### [thm](https://github.com/noahfranklin/thm)
-
-_No description yet._
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-<sub>0 stars · updated 7 months ago</sub>
-
-</td>
+<td><a href="https://github.com/noahfranklin/gideon/commit/e53b10649eb7796829724a3d1aa8a2eeef35ab1e"><code>e53b106</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>Assert sole authorship &amp; copyright (noahfranklin)</td>
+<td><sub>21 days ago</sub></td>
+</tr>
+<tr>
+<td><a href="https://github.com/noahfranklin/gideon/commit/4359a77a6e7d7273d4bcc5a676f6733bc0a2fe53"><code>4359a77</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>docs: warm &quot;torch &amp; parchment&quot; re-skin + animated demo, walkthroughs, c…</td>
+<td><sub>21 days ago</sub></td>
+</tr>
+<tr>
+<td><a href="https://github.com/noahfranklin/gideon/commit/2960d156ae7fdf2860d362d74980e16958c02bbd"><code>2960d15</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>docs: add architecture + workflow diagrams and guides</td>
+<td><sub>21 days ago</sub></td>
+</tr>
+<tr>
+<td><a href="https://github.com/noahfranklin/gideon/commit/1367334cd88c346e1fdf5acb3eff713f849bb338"><code>1367334</code></a></td>
+<td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
+<td>README: add orchestration diagram + example prompts; add skills.json ca…</td>
+<td><sub>21 days ago</sub></td>
 </tr>
 </table>
 
@@ -220,7 +190,7 @@ _No description yet._
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/generated/metrics-dark.svg" />
-  <img src="assets/generated/metrics-light.svg" alt="Contribution heatmap, streak, stars, and language mix" width="100%" />
+  <img src="assets/generated/metrics-light.svg" alt="Stars, forks, public projects, contributions, and language mix" width="100%" />
 </picture>
 
 <p align="center">

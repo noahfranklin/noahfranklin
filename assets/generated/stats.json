@@ -1,0 +1,127 @@
+{
+  "stamp": "2026-10-18",
+  "followers": 2,
+  "stars": 21,
+  "forks": 4,
+  "skills": 26,
+  "solvers": 0,
+  "commit": {
+    "repo": "gideon",
+    "sha": "05b9ba9",
+    "url": "https://github.com/noahfranklin/gideon/commit/05b9ba96f5405fe942dee6870243815f7d5a971f",
+    "message": "README: refresh prose + standards mapping for the 26-skill suite",
+    "date": "2026-10-18T15:43:35Z"
+  },
+  "repos": [
+    {
+      "name": "gideon",
+      "stars": 2,
+      "pushed": "2026-10-18T15:43:38Z",
+      "topics": [
+        "agent-skills",
+        "ai-security",
+        "api-security",
+        "claude",
+        "claude-code",
+        "claude-skills",
+        "codex",
+        "cybersecurity",
+        "llm-security",
+        "mitre-atlas",
+        "owasp",
+        "pentesting",
+        "prompt-injection",
+        "red-team",
+        "security"
+      ],
+      "description": "Gideon — offensive & defensive security skills for Claude Code & Codex. OWASP API + LLM Top 10, MITRE ATLAS, STRIDE/PASTA. Authorized, defensive security work."
+    },
+    {
+      "name": "OWASP-AI-Pentest",
+      "stars": 19,
+      "pushed": "2026-09-26T16:15:48Z",
+      "topics": [],
+      "description": "This guide will walk you through the process of setting up your local development environment, running the application, and preparing it for upload to GitHub."
+    },
+    {
+      "name": "free-claude-code",
+      "stars": 0,
+      "pushed": "2026-09-13T02:16:00Z",
+      "topics": [],
+      "description": "Free Claude Code — fixed version (stream idle-timeout, clean missing-key 401, working-models-only picker). Updated 2026-06-28."
+    },
+    {
+      "name": "thm",
+      "stars": 0,
+      "pushed": "2026-03-21T07:03:05Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "OWASP-TimeMachine",
+      "stars": 0,
+      "pushed": "2026-02-01T12:32:55Z",
+      "topics": [],
+      "description": "Learning Web Application Pentesting"
+    },
+    {
+      "name": "Reverse-Engineering-Training",
+      "stars": 0,
+      "pushed": "2026-01-29T12:25:21Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "Security-Training",
+      "stars": 0,
+      "pushed": "2026-01-19T11:16:51Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "pentesting",
+      "stars": 0,
+      "pushed": "2023-09-13T16:37:46Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "letslearnpentest",
+      "stars": 0,
+      "pushed": "2023-08-22T13:28:43Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "Research",
+      "stars": 0,
+      "pushed": "2023-08-22T10:29:40Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "Tools",
+      "stars": 0,
+      "pushed": "2023-03-10T07:11:24Z",
+      "topics": [],
+      "description": ""
+    },
+    {
+      "name": "sample",
+      "stars": 0,
+      "pushed": "2022-03-26T06:38:30Z",
+      "topics": [
+        "config",
+        "github-config"
+      ],
+      "description": "Config files for my GitHub profile."
+    },
+    {
+      "name": "CEH-V9",
+      "stars": 0,
+      "pushed": "2018-08-01T06:36:20Z",
+      "topics": [],
+      "description": ""
+    }
+  ]
+}
