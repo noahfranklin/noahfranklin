@@ -108,13 +108,13 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td><a href="https://github.com/noahfranklin/gideon/commit/05b9ba96f5405fe942dee6870243815f7d5a971f"><code>05b9ba9</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>README: refresh prose + standards mapping for the 26-skill suite</td>
-<td><sub>4 hours ago</sub></td>
+<td><sub>10 hours ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/dfe53492a7481872ea8021b045ef9061bf04ca4d"><code>dfe5349</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>Gap review: +5 skills (21→26) and latest-method refreshes</td>
-<td><sub>4 hours ago</sub></td>
+<td><sub>11 hours ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/e53b10649eb7796829724a3d1aa8a2eeef35ab1e"><code>e53b106</code></a></td>
@@ -142,7 +142,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 </tr>
 </table>
 
-<sub>Last synced 2026-10-18</sub>
+<sub>Last synced 2026-10-19</sub>
 <!--RECENT_REPOS:END-->
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
