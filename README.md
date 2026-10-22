@@ -126,19 +126,19 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td><a href="https://github.com/noahfranklin/gideon/commit/4359a77a6e7d7273d4bcc5a676f6733bc0a2fe53"><code>4359a77</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>docs: warm &quot;torch &amp; parchment&quot; re-skin + animated demo, walkthroughs, c…</td>
-<td><sub>25 days ago</sub></td>
+<td><sub>26 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/2960d156ae7fdf2860d362d74980e16958c02bbd"><code>2960d15</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>docs: add architecture + workflow diagrams and guides</td>
-<td><sub>25 days ago</sub></td>
+<td><sub>26 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/1367334cd88c346e1fdf5acb3eff713f849bb338"><code>1367334</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>README: add orchestration diagram + example prompts; add skills.json ca…</td>
-<td><sub>25 days ago</sub></td>
+<td><sub>26 days ago</sub></td>
 </tr>
 </table>
 
