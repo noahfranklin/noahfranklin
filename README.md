@@ -108,19 +108,19 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td><a href="https://github.com/noahfranklin/gideon/commit/05b9ba96f5405fe942dee6870243815f7d5a971f"><code>05b9ba9</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>README: refresh prose + standards mapping for the 26-skill suite</td>
-<td><sub>4 days ago</sub></td>
+<td><sub>5 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/dfe53492a7481872ea8021b045ef9061bf04ca4d"><code>dfe5349</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>Gap review: +5 skills (21→26) and latest-method refreshes</td>
-<td><sub>4 days ago</sub></td>
+<td><sub>5 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/e53b10649eb7796829724a3d1aa8a2eeef35ab1e"><code>e53b106</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>Assert sole authorship &amp; copyright (noahfranklin)</td>
-<td><sub>25 days ago</sub></td>
+<td><sub>26 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/4359a77a6e7d7273d4bcc5a676f6733bc0a2fe53"><code>4359a77</code></a></td>
