@@ -142,7 +142,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 </tr>
 </table>
 
-<sub>Last synced 2026-10-24</sub>
+<sub>Last synced 2026-10-25</sub>
 <!--RECENT_REPOS:END-->
 
 <p align="center"><img src="assets/divider.svg" width="100%" alt="" /></p>
