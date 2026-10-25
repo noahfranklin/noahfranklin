@@ -120,7 +120,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td><a href="https://github.com/noahfranklin/gideon/commit/e53b10649eb7796829724a3d1aa8a2eeef35ab1e"><code>e53b106</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>Assert sole authorship &amp; copyright (noahfranklin)</td>
-<td><sub>27 days ago</sub></td>
+<td><sub>28 days ago</sub></td>
 </tr>
 <tr>
 <td><a href="https://github.com/noahfranklin/gideon/commit/4359a77a6e7d7273d4bcc5a676f6733bc0a2fe53"><code>4359a77</code></a></td>
