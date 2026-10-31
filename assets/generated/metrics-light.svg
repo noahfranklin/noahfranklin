@@ -5,7 +5,7 @@
   </defs>
   <rect width="1200" height="260" rx="14" fill="url(#bg)" stroke="#e2e8f0"/>
   <text x="48" y="36" font-family="Inter,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#475569" letter-spacing="2">ACTIVITY</text>
-  <text x="1152" y="36" text-anchor="end" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#94a3b8">synced 2026-10-30</text>
+  <text x="1152" y="36" text-anchor="end" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="11" fill="#94a3b8">synced 2026-10-31</text>
 <g>
       <rect x="48" y="56" width="262" height="96" rx="12" fill="#f1f5f9" stroke="#e2e8f0"/>
       <rect x="48" y="56" width="4" height="96" rx="2" fill="url(#accent)"/>
