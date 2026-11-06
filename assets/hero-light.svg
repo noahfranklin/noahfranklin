@@ -37,7 +37,7 @@
 <clipPath id="clip4"><rect x="80" y="262" width="158" height="20"><animate attributeName="width" values="0;0;158;158" keyTimes="0;0.01133;0.01255;1" dur="600s" repeatCount="indefinite" calcMode="linear"/></rect></clipPath>
 <text x="80" y="276" clip-path="url(#clip4)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#2dd4bf" xml:space="preserve">$ ./profile --audit</text>
 <clipPath id="clip5"><rect x="80" y="283" width="595" height="20"><animate attributeName="width" values="0;0;595;595" keyTimes="0;0.01297;0.01597;1" dur="600s" repeatCount="indefinite" calcMode="linear"/></rect></clipPath>
-<text x="80" y="297" clip-path="url(#clip5)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#34d399" xml:space="preserve">[ok] 21 stars   [ok] 4 forks   [ok] 26 gideon skills   [??] flag: 0 found</text>
+<text x="80" y="297" clip-path="url(#clip5)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#34d399" xml:space="preserve">[ok] 21 stars   [ok] 3 forks   [ok] 26 gideon skills   [??] flag: 0 found</text>
 <clipPath id="clip6"><rect x="80" y="304" width="20" height="20"><animate attributeName="width" values="0;0;20;20" keyTimes="0;0.01680;0.01713;1" dur="600s" repeatCount="indefinite" calcMode="linear"/></rect></clipPath>
 <text x="80" y="318" clip-path="url(#clip6)" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#2dd4bf" xml:space="preserve">$ </text>
 <rect x="98" y="306" width="8" height="15" fill="#0f766e" opacity="0"><animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1" begin="10.08s" dur="10s" repeatCount="indefinite"/></rect>
