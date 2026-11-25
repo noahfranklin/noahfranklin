@@ -138,7 +138,7 @@ A hardened proxy that routes Claude Code and Codex traffic to any provider — f
 <td><a href="https://github.com/noahfranklin/gideon/commit/1367334cd88c346e1fdf5acb3eff713f849bb338"><code>1367334</code></a></td>
 <td><a href="https://github.com/noahfranklin/gideon"><strong>gideon</strong></a></td>
 <td>README: add orchestration diagram + example prompts; add skills.json ca…</td>
-<td><sub>1 month ago</sub></td>
+<td><sub>2 months ago</sub></td>
 </tr>
 </table>
 
